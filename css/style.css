@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main {
+  margin: 100px 0;
+}
+.sliders {
+  filter: drop-shadow(0px 4px 10px #dfdfdf);
+
+  position: relative;
+
+  display: flex;
+}
+
+.slider-item {
+  background-color: #fff;
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.slider-item__right-text {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #595959;
+
+  margin-bottom: 10px;
+}
+
+.text-normal {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.slider-item__right-text .text-bold {
+  width: 100px;
+  text-align: left;
+  font-weight: 700;
+
+  color: #171616;
+}
+
+.slider-item__right-list .text-normal {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.slider-item_list {
+  margin-left: 32px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #171616;
+}
+
+.slider-item_list li {
+  list-style: disc;
+}
+
+.slider-item__left img {
+  width: 711px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* !SLIDER STYLES */
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-dots {
+  order: -1;
+}
+
+.slick-arrow {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.slick-arrow.slick-prev {
+  background: url("../images/icons/prev-arrow.svg") 0 0 / 100% no-repeat;
+  left: -80px;
+  cursor: pointer;
+}
+
+.slick-arrow.slick-next {
+  background: url("../images/icons/next-arrow.svg") 0 0 / 100% no-repeat;
+  right: -80px;
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+}
+.slick-dots li {
+  background: url("../images/slider-2.jpg") 0 0 / 100% no-repeat;
+  width: 82px;
+  height: 51px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.slick-dots li:nth-child(odd) {
+  background: url("../images/sliderSmall.png") 0 0 / 100% no-repeat;
+}
